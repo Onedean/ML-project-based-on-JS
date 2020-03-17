@@ -15,7 +15,7 @@ window.onload = async () => {
     //定义模型结构
     const model = tf.sequential();  // 初始化一个连续的神经网络模型
     model.add(tf.layers.dense({ units: 1, inputShape: [1] }));  // 为神经网络模型添加全连接层，其中神经元个数位1，tensor形状为1维
-    model.compile({ loss: tf.losses.meanSquaredError, optimizer: tf.train.sgd(0.1) });  // 设置损失函数（采用均方误差MSE），设置优化器（学习速率超参数为0.1）
+    model.compile({ loss: tf.losses.meanSquaredError, optimizer: tf.train.sgd(0.1) });  // 设置损失函数（采用均方误差MSE），设置sgd优化器（学习速率超参数为0.1）
 
     // 训练模型并可视化操作过程
     const inputs = tf.tensor(xs);  // 样本
