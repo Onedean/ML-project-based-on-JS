@@ -9,10 +9,10 @@ export function getData(numSamples) {
         }
     }
 
-    genGauss(2, 2, 0);
-    genGauss(-2, -2, 0);
-    genGauss(-2, 2, 1);
-    genGauss(2, -2, 1);
+    genGauss(3, 3, 0);
+    genGauss(-3, -3, 0);
+    genGauss(-3, 3, 1);
+    genGauss(3, -3, 1);
     return points;
 }
 
